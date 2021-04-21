@@ -14,7 +14,7 @@ public class Main {
         System.out.println("What is your date of birth? (MM/DD/YYYY)");
         String rawBirthday = scan.nextLine();
 
-        while (val.birthdayValidator(rawBirthday) != true) {
+        while (!val.birthdayValidator(rawBirthday)) {
             //loops until a valid birthday is input
             System.out.println("Please enter a valid date of birth. (MM/DD/YYYY)");
             rawBirthday = scan.nextLine();
@@ -30,7 +30,7 @@ public class Main {
 
             while (userGuess != answer) {
                 //loop the user to keep guessing until they win or lose
-                while (val.answerValidator(userGuess) == false) {
+                while (!val.answerValidator(userGuess)) {
                     // this will keep prompting the user to input a number until it is within range, without deducting score.
                     userGuess = scan.nextInt();
                 }
