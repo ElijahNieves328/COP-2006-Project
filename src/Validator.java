@@ -46,7 +46,7 @@ public class Validator {
         // This splits the string into an array. Each string separated by a "/" becomes an index value
         if (dateOfBirth.length != 3) {
             // If there are more or less than 3, its the incorrect format
-            System.out.println("Invalid date. Not enough '/'.");
+            System.out.println("Invalid date. Not proper amount of /'s.");
             return false;
         }
 
@@ -74,11 +74,11 @@ public class Validator {
                     return false;
                 }
             } else {
-                System.out.println("There are not that many months in a year.");
+                System.out.println("There are not that many days in a month.");
                 return false;
             }
         } else {
-            System.out.println("There are not that many days in a month.");
+            System.out.println("There are not that many months in a year.");
             return false;
 
         }
