@@ -14,7 +14,7 @@ public class Main {
         HighScoreManager scores = new HighScoreManager();
         //Importing all the classes I need for main.
 
-        System.out.println("Welcome to the Number Guessing Game 2006! What is your name? ");
+        System.out.println("Welcome to the Number Guessing Game 2006! What is your name? (First/MI/Last) ");
         playerInfo.playerName = scan.nextLine().trim(); //passing all credentials to the PLayerInfo class
         System.out.println("Hello, " + playerInfo.playerName + ".");
 
